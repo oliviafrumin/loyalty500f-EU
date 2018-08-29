@@ -6,12 +6,20 @@ feature 'Login Module' do
   include AdminPage
   include LandingPage
 
+  # before(:each) do
+  #   visit '/'
+  #   @account = 1008
+  #   @username = 'merklensqa@gmail.com'
+  #   @password = 'Test1234'
+  # end
+
   before(:each) do
     visit '/'
-    @account = 1008
-    @username = 'merklensqa@gmail.com'
-    @password = 'Test1234'
+    @account = 10030
+    @username = 'ofrumin@merkleinc.com'
+    @password = 'Ifo10044'
   end
+  # binding.pry
 
   it 'should sign in loyaltyplus' do
     login(@username, @password)
@@ -26,7 +34,7 @@ feature 'Login Module' do
     find_account(@account)
     # binding.pry
     account_name = find(:xpath, "//section[@id='primary']/div/h1", wait: 2)
-    account_name.text eq 'Nearsoft Automation'
+    account_name.text eq 'Automation EU - 10030'
     sleep 1
   end
 

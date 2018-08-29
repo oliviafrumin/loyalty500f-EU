@@ -29,8 +29,8 @@ Capybara.default_driver = :selenium_chrome
 Capybara.default_selector = :css
 Capybara.default_max_wait_time = 10
 Capybara.ignore_hidden_elements = false
-Capybara.app_host = 'https://loyalty-stage.500friends.com'
-
+# Capybara.app_host = 'https://loyalty-stage.500friends.com'
+Capybara.app_host = 'https://eu-loyalty.500friends.com'
 
 # - - - - - - - - - - - - - - -
 # RSPEC SETTINGS
@@ -50,4 +50,3 @@ RSpec.configure do |config|
   config.tty = true
   config.formatter = :documentation
 end
-
