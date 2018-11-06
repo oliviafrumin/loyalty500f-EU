@@ -15,16 +15,16 @@ module MembersPage
     fill_in 'customer_customer_detail_attributes_address_line_1', with: 'TestAddressLine1'
     fill_in 'customer_customer_detail_attributes_address_line_2', with: 'TestAddressLine2'
     find(:id, 'customer_customer_detail_attributes_country', wait: 2).click
-    find(:xpath, "//select[@id='customer_customer_detail_attributes_country']/option[@value='US']", wait: 2).click
-    fill_in 'customer_customer_detail_attributes_city', with: 'Phoenix'
-    find(:id, 'customer_customer_detail_attributes_state', wait: 2).click
-    find(:xpath, "//select[@id='customer_customer_detail_attributes_state']/option[@value='AZ']", wait: 2).click
-    fill_in 'customer_customer_detail_attributes_postal_code', with: 85002
+    find(:xpath, "//select[@id='customer_customer_detail_attributes_country']/option[@value='GB']", wait: 2).click
+    fill_in 'customer_customer_detail_attributes_city', with: 'London'
+    # find(:id, 'customer_customer_detail_attributes_state', wait: 2).click
+    # find(:xpath, "//select[@id='customer_customer_detail_attributes_state']/option[@value='AZ']", wait: 2).click
+    fill_in 'customer_customer_detail_attributes_postal_code', with: 'N20'
     fill_in 'customer_customer_detail_attributes_home_phone', with: '+001 777 888-1111'
     fill_in 'customer_customer_detail_attributes_work_phone', with: '+001 777 888-2222'
     fill_in 'customer_customer_detail_attributes_mobile_phone', with: '+001 777 888-3333'
     find(:id, 'customer_locale', wait: 2).click
-    find(:xpath, "//select[@id='customer_locale']/option[@value='en-US']", wait: 2).click
+    find(:xpath, "//select[@id='customer_locale']/option[@value='en-GB']", wait: 2).click
     click_link_or_button 'Save'
   end
 
