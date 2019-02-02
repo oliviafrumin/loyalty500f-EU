@@ -6,16 +6,9 @@ feature 'Login Module' do
   include AdminPage
   include LandingPage
 
-  # before(:each) do
-  #   visit '/'
-  #   @account = 1008
-  #   @username = 'merklensqa@gmail.com'
-  #   @password = 'Test1234'
-  # end
-
   before(:each) do
     visit '/'
-    @account = 10030
+    @account = '10030'
     @username = 'ofrumin@merkleinc.com'
     @password = 'Ifo10044'
   end

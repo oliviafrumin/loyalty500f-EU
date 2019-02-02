@@ -12,7 +12,7 @@ feature 'Members Module' do
   end
 
   before(:each) do
-    @account = 10030
+    @account = '10030'
     @username = 'ofrumin@merkleinc.com'
     @password = 'Ifo10044'
     visit '/'

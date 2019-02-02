@@ -13,12 +13,8 @@ feature 'Badges Module' do
     @badge_name = 'Auto_badge_' + Time.now.to_i.to_s
   end
 
-  # before(:each) do
-  #   @account = 1008
-  #   @username = 'merklensqa@gmail.com'
-  #   @password = 'Test1234'
   before(:each) do
-    @account = 10030
+    @account = '10030'
     @username = 'ofrumin@merkleinc.com'
     @password = 'Ifo10044'
     visit '/'
