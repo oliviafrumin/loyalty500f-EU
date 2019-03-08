@@ -2,10 +2,9 @@ module LandingPage
   include Capybara::DSL
 
   def logout(username)
-    find(:xpath, "//a[@class='options_link' and contains(text(), '" + username.to_s + "')]").hover
-    click_link 'Logout'
+    find(:xpath,"//*[@id='header']/ul/li[4]/div/a", wait: 2).click
+    find(:xpath,"//*[@id='header']/ul/li[4]/div/menu/ul/li[4]/a").click
   end
-
   # Main Navigation Bar
   def navigate_dashboard
     click_link 'Dashboard'

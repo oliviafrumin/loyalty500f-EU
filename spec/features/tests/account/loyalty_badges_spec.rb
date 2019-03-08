@@ -76,8 +76,8 @@ feature 'Badges Module' do
     end
     sleep 1
   end
-
-  after(:each) do
-    logout(@username)
-  end
+  #
+  # after(:each) do
+  #   logout(@username)
+  # end
 end
