@@ -63,6 +63,7 @@ module MembersPage
     find(:xpath, "//select[@id='event_type']//option[@value='purchase']", wait: 2).click
     fill_in 'event_value', with: 10
     click_link_or_button 'Save'
+    sleep 2
   end
 
   def record_generic_event(event_type)
