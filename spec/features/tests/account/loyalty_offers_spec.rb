@@ -63,13 +63,13 @@ feature 'Offers Module' do
     sleep 1
   end
 
-  it 'should archive a promotion' do
-    archive_promotion @promotion_name
-    within '.flash_notice' do
-      verify_content 'The point promotion has been archived.'
+    it 'should archive a promotion' do
+      archive_promotion @promotion_name
+      within '.flash_notice' do
+        verify_content 'The point promotion has been archived.'
+      end
+      sleep 1
     end
-    sleep 1
-  end
 
   after(:each) do
     logout(@username)
