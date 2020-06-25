@@ -12,9 +12,9 @@ feature 'Rewards Module' do
   end
 
   before(:each) do
-    @account = '000'
-    @username = '000'
-    @password = '000'
+    @account = '0000'
+    @username = '000000@000000.com'
+    @password = '00000000000000000'
     visit '/'
     login(@username, @password)
     find_account(@account)
@@ -30,21 +30,21 @@ feature 'Rewards Module' do
     sleep 1
   end
 
-  it 'should modify a reward' do
-    modify_reward @reward_name
-    within '.flash_notice' do
-      verify_content 'Reward was successfully updated.'
-    end
-    sleep 1
-  end
+  # it 'should modify a reward' do
+  #   modify_reward @reward_name
+  #   within '.flash_notice' do
+  #     verify_content 'Reward was successfully updated.'
+  #   end
+  #   sleep 1
+  # end
 
-  it 'should modify a reward limit' do
-    modify_reward_limit @reward_name
-    within '.flash_notice' do
-      verify_content 'Reward was successfully updated.'
-    end
-    sleep 2
-  end
+  # it 'should modify a reward limit' do
+  #   modify_reward_limit @reward_name
+  #   within '.flash_notice' do
+  #     verify_content 'Reward was successfully updated.'
+  #   end
+  #   sleep 2
+  # end
 
   it 'should modify a reward history' do
     modify_reward_history @reward_name

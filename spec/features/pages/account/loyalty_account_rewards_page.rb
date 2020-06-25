@@ -87,7 +87,7 @@ module RewardsPage
     find(:css, "#queryBuilder_0_rule_0 > div.rule-filter-container > select > option:nth-child(2)", wait: 2).click
     # binding.pry
     find(:css, "#queryBuilder_0_rule_0 > div.rule-operator-container > select > option:nth-child(2)", wait: 2).click
-    find(:xpath, "//select['queryBuilder_0_rule_0']/option[@value='1270']", wait: 2).click
+    find(:xpath, "//option[contains(text(),'Auto_reward_1573504613')]", wait: 2).click
     find(:css, "#timeframe_0_always", wait: 2).click
     find(:xpath, "//input[@id='timeframe_0_year_to_date']", wait: 2).click
     find(:xpath, "//input[@id='timeframe_0_previous_calendar_year']", wait: 2).click
